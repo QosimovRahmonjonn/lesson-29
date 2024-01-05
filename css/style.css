@@ -473,7 +473,8 @@ p span {
   align-items: center;
   flex-wrap: wrap;
   border-radius: 10px;
-  background: #ccc;
+  background: #fff;
+  box-shadow: 2px 2px 20px #e0e3ea;
 }
 .position-text h1 {
   display: flex;
@@ -504,6 +505,7 @@ p span {
   border-radius: 10px;
   background: #f53838;
   box-shadow: 0 20px 20px #fdd8d8;
+  cursor: pointer;
 }
 .ijtimoiy-tarmoqlar svg {
   fill: #f53838;
@@ -566,4 +568,7 @@ p span {
 }
 #background {
   background: linear-gradient(to bottom, #fafafa, #fff);
+}
+.owl-theme {
+  padding-bottom: 200px;
 }
