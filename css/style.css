@@ -329,8 +329,9 @@ p span {
 .logos {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
   padding: 54px 0;
 }
 /* HELP SCETION ////////////////////////////////////*/
@@ -604,4 +605,82 @@ p span {
   background-color: #fff !important;
   color: #f53838 !important;
   border: 1px solid #f53838 !important;
+}
+
+/* RESPONSIVE ///////////////////////////////////// */
+@media (max-width: 1150px) {
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .network-image {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-image {
+    margin-top: 30px;
+  }
+  .home-content h1 {
+    text-align: center;
+  }
+  .home-content p {
+    text-align: center;
+  }
+  .home-content {
+    text-align: center;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .user-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about img {
+    display: none;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .features-content h1,
+  p {
+    text-align: center;
+  }
+  .position {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .position-text h1,
+  p {
+    text-align: center;
+  }
+  .footer-card {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: start;
+  }
+  .qator-2 {
+  }
+  .pos {
+    left: 100px;
+  }
 }
