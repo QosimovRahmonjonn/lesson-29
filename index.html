@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -123,7 +124,7 @@
                   happily and cheerfully.
                 </p>
               </div>
-              <div class="cards">
+              <div data-aos="fade-up-right" class="cards">
                 <div class="card">
                   <img src="./images/pricing card image.svg" alt="Free" />
                   <h3>Free Plan</h3>
@@ -230,7 +231,7 @@
         </section>
         <section id="logos">
           <div class="container">
-            <div class="logos">
+            <div data-aos="flip-left" class="logos">
               <img src="./images/logo-1.svg" alt="" />
               <img src="./images/logo-2.svg" alt="" />
               <img src="./images/amazon.png" alt="" />
@@ -441,12 +442,17 @@
     <script src="./js/main.js"></script>
     <script src="./owlcarousel/jquery.min.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    \
+    <script>
+      AOS.init();
+    </script>
     <script>
       $(".owl-carousel").owlCarousel({
         loop: true,
-        margin: 400,
+        margin: 0,
         nav: true,
-        navText: ["prev", "next"],
+        navText: ["<", ">"],
         // mouseDrag: false,
         // dots: false,
         autoplay: true,
@@ -455,10 +461,10 @@
             items: 1,
           },
           600: {
-            items: 2,
+            items: 1.6,
           },
           1000: {
-            items: 3,
+            items: 2.5,
           },
         },
       });

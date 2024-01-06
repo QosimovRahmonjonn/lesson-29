@@ -570,5 +570,27 @@ p span {
   background: linear-gradient(to bottom, #fafafa, #fff);
 }
 .owl-theme {
-  padding-bottom: 200px;
+  padding-bottom: 250px;
+}
+.owl-prev,
+.owl-next {
+  background: #f53838 !important;
+  color: #fff !important;
+  font-size: 32px !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 50% !important;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-prev {
+  position: absolute;
+  top: 260px;
+  right: 120px;
+}
+.owl-next {
+  position: absolute;
+  top: 260px;
+  right: 30px;
 }
