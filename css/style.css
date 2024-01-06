@@ -462,8 +462,7 @@ p span {
   width: 79.1%;
   position: absolute;
   top: -120px;
-  left: 1;
-  right: 1;
+  left: 100px;
   z-index: 1;
 }
 
