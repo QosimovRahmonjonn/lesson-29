@@ -580,6 +580,7 @@ p span {
   width: 60px;
   height: 60px;
   border-radius: 50% !important;
+  transition: all 0.5s linear;
 }
 .owl-carousel {
   position: relative;
@@ -593,4 +594,14 @@ p span {
   position: absolute;
   top: 260px;
   right: 30px;
+}
+.owl-next:hover {
+  background-color: #fff !important;
+  color: #f53838 !important;
+  border: 1px solid #f53838 !important;
+}
+.owl-prev:hover {
+  background-color: #fff !important;
+  color: #f53838 !important;
+  border: 1px solid #f53838 !important;
 }
