@@ -676,10 +676,9 @@ p span {
     margin-top: 250px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-items: start;
+    place-items: start center;
   }
-  .qator-2 {
-  }
+
   .pos {
     left: 100px;
   }
